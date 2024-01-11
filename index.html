@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Customize Your Crad</title>
+    <link rel="shortcut icon" href="imgs/logo/HUIFR.svg" type="image/svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Blaka+Hollow&family=Fredoka&family=Gugi&family=Jura&family=Karantina&family=Kenia&family=Lora:ital@1&family=Marhey&family=Nunito:wght@300&family=Rubik+Scribble&family=Square+Peg&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Blaka+Hollow&family=Fredoka&family=Gugi&family=Jura&family=Karantina&family=Kenia&family=Lora:ital@1&family=Marhey&family=Nunito:wght@300&family=Rubik+Scribble&family=Square+Peg&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,17 +19,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
-        <img src="imgs/logo/HUIFR.svg" alt="no">
+        <img id="active_cover" src="imgs/logo/HUIFR.svg" alt="no">
     </header>
     <section class="fisrt_section">
         <h1>Customize Your Card</h1>
-        <div id="full_card" class="card"> 
-            <div  class="flower_container">
+        <div id="full_card" class="card">
+            <div class="flower_container">
                 <div class="flower">
-                    <div class="f_img">
-                        <img id="flower_container" src="" alt="no" srcset="">
+                    <div id="flower_container" class="f_img">
+                        <!-- <img id="flower_container" src="" alt="no" srcset=""> -->
                     </div>
                 </div>
                 <img class="logo" src="imgs/logo/HUIFR.svg" alt="no" srcset="">
@@ -35,14 +40,14 @@
                 <div class="background_img">
                     <img src="imgs/backshadow images/1.svg" alt="no">
                 </div>
-                <div class="top">
-                    <img id="top_img" src="" alt="no">
+                <div id="top_img" class="top">
+                    <!-- <img  src="" alt="no"> -->
                 </div>
-                <div class="center">
-                    <img id="center_img" src="" alt="no">
+                <div id="center_img" class="center">
+                    <!-- <img  src="" alt="no"> -->
                 </div>
-                <div class="bottom">
-                    <img id="bottom_img" src="" alt="no">
+                <div id="bottom_img" class="bottom">
+                    <!-- <img  src="" alt="no"> -->
                 </div>
             </div>
             <div class="text_container">
@@ -53,10 +58,11 @@
                 <img class="background" src="imgs/backshadow images/2.svg" alt="no">
             </div>
         </div>
+
         <!-- form -->
-        <h1>Pick Card Color</h1>
+        <h1 id="head_label">Pick Card Color</h1>
         <div class="down">
-            <form action="" method="post">
+            <form action="" method="post" id="create_card_form">
                 <div class="color" id="form_color">
                     <input class="radio_color_1" type="radio" name="color" id="">
                     <input class="radio_color_2" type="radio" name="color" id="">
@@ -73,19 +79,23 @@
                     <input class="radio_flower_4" type="radio" name="flower" id="">
                     <input class="radio_flower_5" type="radio" name="flower" id="">
                     <input class="radio_flower_6" type="radio" name="flower" id="">
+                    <input class="radio_flower_7" type="radio" name="flower" id="">
+                    <input class="radio_flower_8" type="radio" name="flower" id="">
+                    <input class="radio_flower_9" type="radio" name="flower" id="">
+                    <input class="radio_flower_10" type="radio" name="flower" id="">
                 </div>
                 <div class="images hide" id="form_images">
                     <div>
                         <label for="">Top Image</label>
-                        <input type="file" name="" id="fImg">
+                        <input type="file" name="firstImage" id="fImg">
                     </div>
                     <div>
                         <label for="">Center Image</label>
-                        <input type="file" name="" id="sImg">
+                        <input type="file" name="secImage" id="sImg">
                     </div>
                     <div>
                         <label for="">Bottom Image</label>
-                        <input type="file" name="" id="tImg">
+                        <input type="file" name="thirdImage" id="tImg">
                     </div>
                 </div>
                 <div class="text_enter hide" id="form_text_enter">
@@ -108,17 +118,39 @@
             </form>
             <div class="next_priv">
                 <div class="priv">
-                    <a id="prev_btn" href="#"><img src="imgs/icons/left.svg" alt="no"><p>Previous</p></a>
+                    <a id="prev_btn" href="#"><img src="imgs/icons/left.svg" alt="no">
+                        <p>Previous</p>
+                    </a>
                 </div>
                 <div class="next">
-                    <a id="next_btn" href="#"><p>Next</p><img src="imgs/icons/next.svg" alt="no"></a>
+                    <a id="next_btn" href="#">
+                        <p>Next</p><img src="imgs/icons/next.svg" alt="no">
+                    </a>
                 </div>
             </div>
         </div>
 
     </section>
+
+    <!-- ! tell him that all is don and he need to insert the email for the user he need to send mail to it -->
+    <!-- ! msg section to put in includes -->
+    <section id="next_prev_msg_id" class="no_prev_next">
+        <div class="contant">
+            <img id="msg_img" src="imgs/msg images/prev&next error.jpeg" alt="" srcset="">
+            <div class="text">
+                <div>
+                    <h1 id="msg_header_text"></h1>
+                    <p id="msg_header_para"></p>
+                </div>
+                <button id="remove_msg" class="ok_btn">Ok</button>
+            </div>
+        </div>
+    </section>
+    <script src="js/after submit.js"></script>
+    <!-- <script src="js/show cover card.js"></script> -->
     <script src="js/textMsg.js"></script>
     <script src="js/changes.js"></script>
     <script src="js/next.js"></script>
 </body>
+
 </html>
